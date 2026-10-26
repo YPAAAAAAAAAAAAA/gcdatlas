@@ -1,0 +1,20 @@
+{
+  "id": "gcdatlas",
+  "title": {
+    "en": "gcdatlas",
+    "zh": "字符宇宙图集"
+  },
+  "intro": {
+    "en": "Pinch and drag an ASCII atlas from Earth and the Moon out to the edge of the observable universe.",
+    "zh": "双指缩放、拖动环顾：一幅从地球与月球直到可观测宇宙边缘的字符图集。"
+  },
+  "officialFiles": [
+    "vendor/index.html",
+    "vendor/atlas.css",
+    "vendor/atlas.js",
+    "vendor/LICENSE.txt"
+  ],
+  "playHtml": "play.html",
+  "aspect": "phone",
+  "githubRepo": "ypaaaaaaaaaaaaa/gcdatlas"
+}
