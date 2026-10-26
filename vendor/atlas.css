@@ -1,0 +1,107 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #07060d;
+  color: #e7e1d4;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+body {
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+#stage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  background: #07060d;
+}
+#ui-toggle {
+  position: absolute;
+  z-index: 3;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 22px;
+  background: rgba(8, 10, 18, 0.4);
+  color: rgba(236, 228, 210, 0.88);
+  font: 20px/44px ui-monospace, monospace;
+  touch-action: manipulation;
+}
+#panel {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  top: 58px;
+  right: 8px;
+  width: min(236px, 64vw);
+  max-height: 40%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 10px 10px 12px;
+  border-radius: 14px;
+  background: rgba(8, 10, 18, 0.82);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+body.ui-open #panel { display: block; }
+#place {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+#range {
+  margin: 2px 0 0;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: #b7b0c4;
+}
+#fact {
+  margin: 6px 0 8px;
+  font-size: 13px;
+  line-height: 1.35;
+  color: #d9d3c6;
+}
+#tours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+#tours button {
+  flex: 1 1 46%;
+  min-height: 44px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 10px;
+  background: #1a2030;
+  color: #f0e6cf;
+  font: 600 14px/1.15 system-ui, sans-serif;
+  touch-action: manipulation;
+}
+#tours button:active { background: #2a354c; }
+#hint {
+  position: absolute;
+  z-index: 2;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  margin: 0;
+  text-align: center;
+  pointer-events: none;
+  font: 500 12px/1.35 system-ui, sans-serif;
+  color: rgba(232, 226, 214, 0.78);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+}
+#hint small {
+  display: block;
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 450;
+  color: rgba(214, 208, 196, 0.66);
+}
